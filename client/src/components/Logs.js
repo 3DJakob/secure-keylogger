@@ -65,7 +65,7 @@ const Logs = ({ }) => {
       });
 
     const fetchData = async () => {
-        const resp = await window.fetch('http://192.168.1.103:3000/logs')
+        const resp = await window.fetch('http://localhost:3000/logs')
         const data = await resp.json()
         console.log(data.logs)
         setLogs(data.logs)
